@@ -1,0 +1,21 @@
+#main .title-Page .container-fluid .title_compare-page h1{
+    padding-top: 10vh;
+    text-align: center;
+    font-size: 4rem;
+    font: 700;
+}
+
+#main .title-Page .container-fluid p.Link-to-allModelsPhone{
+    margin-top: 6px;
+    font-size: 3.2vh; 
+    font-weight: 400;
+    text-align: center;
+}
+
+.btn-link{
+    position: static;
+    cursor: pointer;
+    border: none;
+    background: none;
+    overflow: visible;
+}
