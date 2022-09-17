@@ -1,0 +1,137 @@
+html, body {
+    height: 100%;
+    position: relative;
+}
+
+#main{
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    background-color: #f2f2f2;
+}
+
+#main .header nav{
+    background-color: rgba(255,255,255,0.72) !important;
+}
+
+#main .header .container-fluid h1{
+    text-align: center; 
+    font: bold; 
+    font-weight: 400;
+}
+
+#main .header .navbar{
+    background-color: white;
+}
+
+.section-content{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+#main .section-content.product-GalaxyS20{
+    padding-top: 80px;
+    background-color: #000000;
+}
+
+#main .section-content.product-GalaxyS20 h1{
+    color: white;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+#main .section-content.product-GalaxyS20 p{
+    color: white;
+    font-size: 27px;
+    font-weight: 400;
+}
+
+#main .section-content.product-GalaxyS20 .link a{
+    font-size: 21px;
+}
+
+#main .section-content.product-GalaxyZ{
+    padding-top: 80px;
+    background-color: #ffffff;
+}
+
+#main .section-content.product-GalaxyZ h1{
+    font-size: 56px;
+    font-weight: bold;
+}
+
+#main .section-content.product-GalaxyZ p{
+    font-size: 27px;
+    font-weight: 400;
+}
+
+#main .section-content.product-GalaxyZ .link a{
+    font-size: 21px;
+}
+
+#main .section-content.product-GalaxyZ .img-fluid{
+    width: 90%;
+    padding-top: 50px;
+}
+
+#main .section-content .section-content-text-1{
+    height: 50vh;
+}
+
+.section-content .section-content-text-1 h1{
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+
+.section-content .section-content-text-1 p{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.section-content .section-content-text-1 .link{
+    font-size: 1.3rem;
+}
+
+.section-content .section-content-text-1{
+    margin-top: 20vh;
+    margin-left: 8rem;
+}
+
+.section-content.help{
+    display: flex;
+    justify-content: center;
+}
+
+.section-content .product-first{
+    margin-left: 8rem;
+}
+
+.section-content .product-first .img-fluid{
+    height: 100%;   
+}
+
+.section-content .product-second{
+    margin-right: -100px;
+}
+
+.section-content-text-2 h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.section-content .section-content-text-2 p{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.section-content .section-content-text-2 .link{
+    font-size: 1.3rem;
+}
+
+.section-content .section-content-text-2{
+    margin-top: 19vh;
+}

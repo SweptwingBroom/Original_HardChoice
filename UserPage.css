@@ -1,0 +1,33 @@
+html, body{
+    height: 100%;
+}
+
+#main{
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    background-color: white;
+}
+
+#main .navbar-expand-lg.navbar-light .container-fluid .navbar-brand{
+    text-align: center;
+    padding: 0 0 0 10rem !important;
+}
+
+#main .navbar.navbar-expand-lg.navbar-light .container-fluid .navbar-nav{
+    padding: 0 10rem 0 0 !important;
+}
+
+#main .navbar.navbar-expand-lg.navbar-light .container-fluid .justify-content-end .navbar-nav .nav-item{
+    margin: 0 10px 0 5px !important;
+    font-size: 0.9rem !important;
+}
+
+#main .header{
+    height: 100vh;
+}
+
+#main .header .container-fluid h1{
+    font-size: 250px;
+    text-align: center;
+    margin-top: 19vh;
+}

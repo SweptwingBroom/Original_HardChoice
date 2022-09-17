@@ -1,0 +1,167 @@
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+section{
+  display: block;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+#main .header nav{
+  background-color: rgba(255,255,255,0.72) !important;
+}
+
+#main{
+  background-color: #f2f2f2;
+}
+
+.nav2-color{
+  background-color: white;
+}
+
+.product{
+  padding-top: 100px;
+  text-align: center;
+  border: #ffffff;
+}
+
+.product h1{
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.product h2{
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.product .links{
+  font-size: 21px;
+  margin-bottom: 80px;
+}
+
+.product-Iphone11{
+  background-color: #000;
+}
+
+.product-Iphone11 h1{
+  color: white;
+}
+
+.product-Iphone11 h2{
+  color: #ffffff;
+}
+
+.product.product-GalaxyNote10{
+  background-color: #ffffff;
+}
+
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+
+.product-small{
+  height: 550px;
+  padding-top: 40px;
+  margin: 0 0 10px 10px;
+  text-align: center;
+}
+
+.product-small h3{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.product-small h4{
+  padding-top: 1vh;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.product-small#Xiaomi-Product{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-small#LG-Product{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-small#Google4{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.product-small#Huawie30{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-small#Google4 h3 h4{
+  color: #000;
+}
+
+.product-small .links{
+  font-size: 19px;
+  margin-bottom: 80px;
+}
+
+.product-small#Xiaomi-Product .links .learn-more{
+  color: #ffffff;
+}
+.product-small#LG-Product .links .learn-more{
+  color: #ffffff;
+}
+
+.products-grid{
+  padding-right: 10px;
+}
+
+.section-compare{
+  padding-top: 0px;
+  text-align: center;
+  border: #ffffff;
+}
+
+.section-compare .caption{
+  position: absolute;
+  padding-top: 40vh;
+  width: 100%;
+  padding-right: 0%;
+  padding-left: 0%;
+}
+
+.section-compare h1{
+  font-size: 56px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.section-compare .links{
+  font-size: 21px;
+  margin-bottom: 80px;
+}
+
+.section-compare .links .learn-more{
+  color: #ffffff;
+}
+
+@media (max-width: 768px){
+  #hero{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+  }
+}

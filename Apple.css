@@ -1,0 +1,158 @@
+html, body {
+    height: 100%;
+    position: relative;
+}
+
+#main{
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    background-color: #f2f2f2;
+}
+
+#main .header nav{
+    background-color: rgba(255,255,255,0.72);
+}
+
+#main .header .container-fluid h1{
+    text-align: center; 
+    font: bold; 
+    font-weight: 400;
+}
+
+.section-content{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.section-content .section-content-text-1 h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.section-content .section-content-text-1 p{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.section-content .section-content-text-1 .link{
+    font-size: 1.3rem;
+}
+
+.section-content .section-content-text-1{
+    margin-top: 20vh;
+    margin-left: 8rem;
+}
+
+.section-content.help{
+    display: flex;
+    justify-content: center;
+}
+
+.section-content .product-first{
+    margin-left: 8rem;
+}
+
+.section-content .product-second{
+    margin-right: -100px;
+}
+
+.section-content-text-2 h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.section-content .section-content-text-2 p{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.section-content .section-content-text-2 .link{
+    font-size: 1.3rem;
+}
+
+.section-content .section-content-text-2{
+    margin-top: 23vh;
+}
+
+.section-content.product-iphone-xr{
+    position: relative;
+    padding-top: 3vh;
+    color: white;
+}
+
+.section-content.product-iphone-xr h1{
+    position: absolute;
+    z-index: 1;
+    padding-top: 9vh;
+    padding-left: 6rem;
+    font-size: 3.6rem;
+    font-weight: 900;
+}
+
+.section-content.product-iphone-xr p{
+    position: absolute;
+    z-index: 1;
+    padding-top: 67vh;
+    padding-left: 71.5rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.section-content.product-iphone-xr .link{
+    position: absolute;
+    padding-top: 90vh;
+    padding-left: 79rem;
+    font-size: 1.3rem;
+}
+
+.section-content.product-iphone-xr .link .learn-more{
+    color: #ffffff;
+}
+
+.section-content.product-iphone-x{
+    background-color: #f9f9f9;
+}
+
+.section-content.product-iphone-x h1{
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.section-content.product-iphone-x p{
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.section-content.product-iphone-x .link{
+    font-size: 1.3rem;
+}
+
+.section-content.product-iphone-x .img-fluid.iphoneX{
+    margin-right: 0 auto;
+    margin-left: 0 auto;
+    height: 450px;
+}
+
+.section-content.product-iphone-8{
+    background-color: rgb(247, 227, 218);
+    padding-top: 50px;
+}
+
+.section-content.section-content.product-iphone-8 h1{
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.section-content.section-content.product-iphone-8 p{
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.section-content.product-iphone-8 .link{
+    font-size: 1.3rem;
+}

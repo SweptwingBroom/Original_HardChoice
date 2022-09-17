@@ -1,0 +1,32 @@
+body{
+    background-color: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main{
+    height: 100% !important;
+}
+
+.page-container{
+    width: 900px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.contant-box {
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+input{
+    padding: 0px 20px;
+    width: 300px;
+    height: 40px;
+    font-size: 22px;
+}
+
+.search{
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+}
