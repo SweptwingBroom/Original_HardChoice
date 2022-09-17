@@ -1,5 +1,5 @@
 <?php 
-    require '../Headers/HeaderAdminPage.php';
+    require '../Headers/HeaderUserPage.php';
 ?>
         <main id="main">
             <section class="header"> 
@@ -22,10 +22,9 @@
                         <a class="navbar-brand"><i class="far fa-user"></i> <?=$_SESSION["userName"]?> </a>
                         <div class="justify-content-end">
                             <ul class="navbar-nav">
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="admin_page.php">Overview</a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="liveUsers.php">Live Users</a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link" href="EditDetail.php">EditDetail</a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link disabled">Edit</a></li>
+                                <li class="nav-item" role="presentation"><a href="USER_Page.php" class="nav-link">Overview</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link disabled" href="UserEdit.php" style="width: 35px;">Edit</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" href="Compare_Mode_downlond.php" style="width: 152px;">Compare Download</a></li>
                             </ul>
                         </div>
                     </div>
@@ -39,6 +38,43 @@
                         <div class="col-sm-12">
                             <h1 class="d-flex justify-content-center">Edit Zone</h1>
                             <p class="d-flex align-items-center justify-content-center">Here are you can change you'r contant of the account.</p>
+                            <br>
+                            <p class="d-flex align-items-center justify-content-center">Enter the all fields for change path to login</p>
+                            <?php 
+                            if(isset($_GET["error"])){
+                                if($_GET["error"] == "emptyChangesfields"){
+                                    echo '<p style="color: red; font-size: 1.6rem;">You have empty fields!</p>';
+                                }
+                                
+                                elseif($_GET["error"] == "invalidmailuid"){
+                                    echo '<p class="message" style="color: red; font-size: 1.6rem;">One of the fields wrong. Check it!</p>';
+                                }
+
+                                elseif($_GET["error"] == "invalidmail"){
+                                    echo '<p class="message" style="color: red; font-size: 1.6rem;">One of the fields wrong. Check it!</p>';
+                                }
+
+                                elseif($_GET["error"] == "invaliduid"){
+                                    echo '<p class="message" style="color: red; font-size: 1.6rem;">One of the fields wrong. Check it!</p>';
+                                }
+
+                                elseif($_GET["error"] == "sqlerror"){
+                                    echo '<p class="message" style="color: orange; font-size: 1.6rem;">SQL problems. Try again later!</p>';
+                                }
+
+                                elseif($_GET["error"] == "passwordcheck"){
+                                    echo '<p class="message" style="color: red; font-size: 1.6rem;">One of the fields wrong. Check it!</p>';
+                                }
+
+                                elseif($_GET["error"] == "usertaken"){
+                                    echo '<p class="message" style="color: red; font-size: 1.6rem;">Username taken! Please enter different username!</p>';
+                                }
+                            }
+
+                            elseif(isset($_GET["requset"])){
+                                echo '<p class="message" style="color: green; font-size: 1.6rem;">Changes accepted!</p>';
+                            }
+                            ?>
                             <div class="card">
                                 <div class="d-flex justify-content-center">
                                     <form action="includes/changeDetailUser.php" method="POST">
@@ -49,29 +85,25 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-12">E-mail:</label>
+                                            <label class="col-sm-12" for="email">E-mail:</label>
                                             <div class="col-sm-12">
-                                                <input class="form-control" type="text" name="nmail" placeholder="Enter New email">
+                                                <input class="form-control" type="email" id="email" name="nmail" placeholder="Enter New email">
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-12">Password:</label>
+                                            <label class="col-sm-12" for="npwd">Password:</label>
                                             <div class="col-sm-12">
-                                                <input class="form-control" type="text" name="npwd" placeholder="Enter New Password">
+                                                <input class="form-control" type="password" id="npwd" name="npwd" placeholder="Enter New email" minlength="8">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-sm-12">Repeat Password:</label>
                                             <div class="col-sm-12">
-                                                <input class="form-control" type="text" name="npwd" placeholder="Repeat the New Password">
+                                                <input class="form-control" type="password" name="npwd-repeat" placeholder="Enter New email" minlength="8">
                                             </div>
-                                        </div>      
-                                        <button type="submit" class="btn btn-secondary col-sm-12" name="signup-submit">submit</button>
+                                        </div>
+                                        <button type="submit" class="btn btn-secondary col-sm-12" name="changedetail-submit">submit</button>
                                     </form>
-                                    <section class="message">
-                                        <p>You are logged out!</p>
-                                        <p>You are logged in!</p>
-                                    </section>
                                 </div>
                             </div>
                         </div>
